@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Covered+By+Your+Grace|Lusitana');
+
+.top-bar {
+    height: 2em;
+    background: #375e97;
+    margin: -15px;
+}
+.signature-container {
+    position: fixed;    
+    width: 12em;
+    height: 8em;
+    background-color: #fff;
+    opacity: 0.8;
+    margin-left: 2em;
+}
+
+h1 {
+  font-size: 6em;
+  font-family: "Caveat Brush", "Lusitana", "Covered By Your Grace";
+}
+.cover {
+    background: url(../images/Llort10-2.svg) no-repeat center center fixed;
+    /* background: #1E1E1E; */
+    background-size: cover;
+    height:26em;
+    background-color: WhiteSmoke;
+    color: #fff;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+}
+.cover .center-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    text-align: center
+}
+.container {
+    background: #fb6542 none;
+}
+.tribute-info {
+    background-color: #f7f6f6;
+}
+footer {
+    background-color: #ffbb00;
+}
