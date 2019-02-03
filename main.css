@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:300|Give+You+Glory|Shadows+Into+Light');
 
+body {
+    margin: 0;
+}
 .top-bar {
     height: 2em;
     background: #375e97;
@@ -20,7 +23,6 @@ h1 {
 }
 .cover {
     background: url(../images/Llort10-2.svg) no-repeat fixed;
-    /* background: #1E1E1E; */
     background-size: cover;
     background-position: top center;
     height:26em;
@@ -32,53 +34,61 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: inherit;
     text-align: center
 }
 .container {
     width: 100%;
-    height: 200vh;
     display: flex;
     justify-content: space-between;
 
 }
 .left-column, .right-column {
-    width: 10%;
-    height: 160vh;
+    width: 10vw;
     background: #fb6542;
 
 }
-.tribute-info {
+.main-info {
     display: flex;
     width: 100%;
-    height: 160vh;
     flex-wrap: wrap;
 }
-.img-div {
+.img-small {
     width: 100%;
     height: 10vh;
     background: #f7f6f6;
 }
 
-.img-div img, .par-img img {
+.img-small img, #img-div img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
-.img-div img {
+.img-small img {
     height: 80%;
 }    
-.par-img img {
-   height: 70%;
+#img-div img {
+  width: 95%;
+  max-height: 900px;
+  max-width: 1200px;
+
 }
-.paragraph-div, .par-img{
+
+#caption {
+    text-align: center;
+}
+
+
+.paragraph-div, #img-div{
     width: 45%;
-    height: 75vh;
     margin: 1em;
 }
 
-footer {
-    margin: -15px;
-    bottom: 0;
-    background-color: #ffbb00;
+a {
+    text-decoration: none;
+    color: #fb6542
+}
+
+@media screen and (max-width: 720px) {
+    .paragraph-div, #img-div{
+        width: 85%;
+    }
 }
